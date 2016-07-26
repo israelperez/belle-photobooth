@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       jsDev: 'scripts/*.js',
       jsDist: 'js/main.js',
       jsDistFolder: 'js/*',
-      sass: 'scss/*.scss',
+      sass: 'scss/{,**/*}*.scss',
       cssDev: 'scss/main.css',
       cssDist: 'css/main.css',
       cssDistFolder: 'css/*',
