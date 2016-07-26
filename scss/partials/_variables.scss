@@ -1,0 +1,85 @@
+/*			Variables
+*********************************/
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-flex:               false !default; // used in grid
+// $enable-rounded:            true !default;
+// $enable-shadows:            false !default;
+// $enable-gradients:          false !default;
+// $enable-transitions:        false !default;
+$enable-hover-media-query:  false !default; // used in reboot
+$enable-grid-classes:       true !default; // used in grid
+
+// Media queries, Grid
+// used in grid
+$grid-breakpoints: (
+	mobile: 0,
+	mobilelarge: 544px,
+	tablet: 760px,
+	tabletlarge: 992px,
+	desktop: 1030px,
+	desktoplarge: 1200px,
+	desktopxlarge: 1800px
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+// used in grid
+$container-max-widths: (
+	mobilelarge: 1050px,
+  tablet: 1050px,
+	tabletlarge: 1050px,
+  desktop: 1050px,
+  desktoplarge: 1050px,
+  desktopxlarge: 1050px
+) !default;
+
+// Grid Set the number of columns and specify the width of the gutters.
+$grid-columns:      12 !default; // used in grid
+$grid-gutter-width: 1.875rem !default; // used in grid
+//
+// $top-nav: 37px;
+// $col-a: 63%;
+// $col-b: 37%;
+
+// Material design
+$paper-depth1: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+$apper-depth2: 0 3px 10px rgba(0, 0, 0, 0.16), 0 3px 10px rgba(0, 0, 0, 0.23);
+$paper-depth3: 0 10px 30px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//$zindex-dropdown-backdrop:  990 !default;
+$zindex-navbar:				1000 !default;
+$zindex-dropdown:			1000 !default;
+$zindex-navbar-fixed:	1030 !default;
+//$zindex-navbar-sticky:     1030 !default;
+$zindex-modal-bg:			1040 !default;
+$zindex-modal:				1050 !default;
+$zindex-popover:			1060 !default;
+//$zindex-tooltip:           1070 !default;
+$z-index-throbber:			1100 !default;
+
+$border-width: 1px !default;
+
+
+// Element options
+//
+// general
+$general-spacing:					20px !default; // used in reboot
+// tables
+$table-cell-padding:			.75rem !default;
+// animation timing
+$animation-small-time:		0.5s !default;
+$animation-medium-time:		0.7s !default;
+$animation-large-time:		1s !default;
+// icons
+$icon-prefix:							"icon";
+//drop downs
+$dropdown-border-width:		$border-width !default;

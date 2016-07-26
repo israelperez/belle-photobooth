@@ -1,7 +1,15 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+// Vendor - 3rd Party Dependencies
+//@import "normalize-css/normalize.css"; // not being added correctly. needs to be in vendor folder and renamed to scss
+@import "vendor/normalize";
 
-body{
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  color: green;
-}
+// Partials - Authored Dependencies
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/colours";
+@import "partials/mixins";
+@import "partials/mediaqueries";
+@import "partials/grid";
+//@import "partials/icons";
+@import "partials/utilities";
+
+@import "partials/reboot"; // custom: uses our variables

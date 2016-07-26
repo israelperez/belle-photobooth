@@ -1,0 +1,96 @@
+$grey-lightest:   #f7f7f7;
+$grey-lighter:		#eaeaea;
+$grey-light:			#dadada;
+$grey:						#bfbfbf;
+$grey-dark:       #999;
+$grey-darker:     #666;
+$grey-darkest:    #333;
+
+$peter-river:		#3498db;
+$turquoise:			#1abc9c;
+$emerald:			  #2ecc71;
+$sun-flower:		#f1c40f;
+$carrot:				#e67e22;
+$alizarin:			#e74c3c;
+$amethyst:			#9b59b6;
+
+$belize-hole:		#2980b9;
+$green-sea:			#16a085;
+$nephritis:			#27ae60;
+$orange:        #f39c12;
+$pumpkin:       #d35400;
+$pomegranate:		#c0392b;
+$wisteria:			#8e44ad;
+
+$clouds:        #ecf0f1;
+$silver:        #bdc3c7;
+$concrete:      #95a5a6;
+$asbestos:      #7f8c8d;
+$wet-asphalt:		#34495e;
+$midnight-blue: #2c3e50;
+
+// colours
+//
+//
+$brand-primary:     white;
+$brand-secondary:   white;
+$brand-accent:      white;
+$brand-success:     white;
+$brand-info:        white;
+$brand-warning:     white;
+$brand-danger:      white;
+
+// theme colours
+$text-on-brand-primary:   white;
+$text-on-brand-secondary: white;
+
+// General
+//
+$focus-colour:		white !default;
+$border-colour:		$grey-light !default;
+$error-colour:		white;
+// Body
+//
+$body-bg-colour:        white !default; // used in reboot
+$body-text-colour:      $grey-darkest !default; // used in reboot (old name $body-colour)
+$font-heading-colour:   $brand-primary; // used in reboot
+$abbr-border-colour:    $border-colour !default; // used in reboot
+$text-muted:            $grey-dark !default; // used in reboot
+$text-colour-on-dark:   white;
+
+// Links
+//
+// Style anchor elements.
+$link-colour:           $brand-primary !default; // used in reboot
+$link-decoration:       underline !default; // used in reboot
+$link-hover-colour:     white; //darken($link-colour, 15%) !default; // used in reboot
+$link-hover-decoration: underline !default; // used in reboot
+
+// Nav
+//
+// Main nav and other navs like tabs, pagination etc
+$nav-normal-bg-colour:    white;
+$nav-normal-text-colour:  $brand-primary;
+$nav-hover-bg-colour:     $brand-secondary;
+$nav-hover-text-colour:   white;
+
+// Table
+//
+$table-bg:              transparent !default; // used in reboot
+// $table-bg-accent:							 #f9f9f9 !default;
+// $table-bg-hover:								#f5f5f5 !default;
+// $table-bg-active:							 $table-bg-hover !default;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+$dropdown-bg-colour:            white !default;
+$dropdown-border-colour:        $border-colour !default;
+$dropdown-link-colour:          $grey-darkest !default;
+$dropdown-link-hover-colour:    $grey-darkest !default;
+$dropdown-link-hover-bg-colour: $grey-lightest !default;
+
+// Form controls
+//
+$form-control-bg-color:         $grey-light;
+$form-control-select-bg-color:  $brand-secondary;
