@@ -32,27 +32,31 @@ $midnight-blue: #2c3e50;
 // colours
 //
 //
-$brand-primary:     white;
-$brand-secondary:   white;
-$brand-accent:      white;
-$brand-success:     white;
-$brand-info:        white;
-$brand-warning:     white;
-$brand-danger:      white;
+$brand-primary:     #000;
+$brand-secondary:   $sun-flower;
+$brand-accent:      $sun-flower;
+$brand-success:     $emerald;
+$brand-info:        $concrete;
+$brand-warning:     $concrete;
+$brand-danger:      $alizarin;
 
 // theme colours
-$text-on-brand-primary:   white;
-$text-on-brand-secondary: white;
+$text-primary:            $grey-darker;
+$text-secondary:          $brand-accent;
+$text-on-brand-primary:   #fff;
+$text-on-brand-secondary: #000;
+$text-on-light:           $grey-darker;
+$text-on-dark:            #fff;
 
 // General
 //
-$focus-colour:		white !default;
-$border-colour:		$grey-light !default;
-$error-colour:		white;
+$focus-colour:          white !default;
+$border-colour:         $grey-light !default;
+$error-colour:          white;
 // Body
 //
 $body-bg-colour:        white !default; // used in reboot
-$body-text-colour:      $grey-darkest !default; // used in reboot (old name $body-colour)
+$body-text-colour:      $text-primary !default; // used in reboot (old name $body-colour)
 $font-heading-colour:   $brand-primary; // used in reboot
 $abbr-border-colour:    $border-colour !default; // used in reboot
 $text-muted:            $grey-dark !default; // used in reboot
