@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     site: {
-      jsDev: 'scripts/*.js',
+      jsDev: 'scripts/{,**/*}*.js',
       jsDist: 'js/main.js',
       jsDistFolder: 'js/*',
       sass: 'scss/{,**/*}*.scss',
@@ -106,7 +106,7 @@ module.exports = function(grunt) {
     uglify: {
       options: {
         compress: true,
-        mangle: true
+        mangle: false
       },
       dev: {
         sourceMap: true,
@@ -146,9 +146,9 @@ module.exports = function(grunt) {
       scripts: {
         files: ['<%= site.jsDev %>'],
         tasks: ['newer:jshint', 'concat:dev', 'uglify:dev'],
-        options: {
+        /*options: {
           livereload: false
-        }
+        }*/
       },
       styles: {
         files: ['<%= site.sass %>'],
