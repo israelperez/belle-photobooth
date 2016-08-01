@@ -1,0 +1,43 @@
+header{
+  //background-image: url(../img/header-enterprise.jpg);
+  //background-size: cover;
+}
+.hero{
+  padding: 0;
+  &_nav{
+    @extend .grid-container;
+    position: relative;
+    padding: 10px;
+    &-head{
+      &-logo{
+        height: 32px;
+      }
+    }
+    &-list{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      &__left,
+      &__right{
+        margin-bottom: 0;
+      }
+      &__left{
+
+      }
+      &__right{
+
+      }
+    }
+  }
+  &_img{
+    background-image: url('../img/header-enterprise.jpg');
+    background-size: cover;
+  }
+  &_intro{
+    padding: $grid-gutter-width / 2;
+    h2{
+      color: $text-secondary;
+    }
+  }
+}
