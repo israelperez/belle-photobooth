@@ -1,0 +1,22 @@
+
+
+// Header seperate
+
+
+// section 1
+.section-1{
+  @extend .grid-container;
+  &_left{
+    @extend .grid-mobile_col-12;
+    background: url(../img/11838575_534653346684466_2413917246813115276_o.jpg);
+    background-size: cover;
+    min-height: 320px;
+  }
+  &_right{
+    @extend .grid-mobile_col-12;
+    padding-top: $general-spacing;
+    h3{
+      color: $text-secondary;
+    }
+  }
+}
