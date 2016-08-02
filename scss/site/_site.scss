@@ -8,15 +8,95 @@
   @extend .grid-container;
   &_left{
     @extend .grid-mobile_col-12;
-    background: url(../img/11838575_534653346684466_2413917246813115276_o.jpg);
+    @extend .grid-tablet_col-6;
+    @extend .grid-desktop_col-5;
+    background: url('../img/section01-image.jpg');
     background-size: cover;
     min-height: 320px;
   }
   &_right{
     @extend .grid-mobile_col-12;
+    @extend .grid-tablet_col-6;
+    @extend .grid-desktop_col-7;
     padding-top: $general-spacing;
     h3{
       color: $text-secondary;
     }
   }
+}
+.section-2{
+  background: black;
+  &_container{
+    @extend .grid-container;
+    padding-top: $general-spacing * 3;
+    padding-bottom: $general-spacing * 3;
+    img{
+      @extend .grid-mobile_col-12;
+      @extend .grid-tablet_col-6;
+      @extend .grid-desktop_col-4;
+    }
+  }
+}
+.section-3{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/red-carpet.jpg');
+  background-size: cover;
+  color: $text-colour-on-dark;
+  &_container{
+    @extend .grid-container;
+    padding-top: $general-spacing * 2;
+    padding-bottom: $general-spacing * 2;
+    &-left{
+      @extend .grid-mobile_col-12;
+      @extend .grid-tablet_col-6;
+      @extend .grid-desktop_col-7;
+      text-align: center;
+      margin-bottom: $general-spacing * 3;
+      h2{
+        color: $text-colour-on-dark;
+        margin-bottom: $general-spacing;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    &-right{
+      @extend .grid-mobile_col-12;
+      @extend .grid-tablet_col-6;
+      @extend .grid-desktop_col-5;
+      p:first-of-type{
+        column-count: 2;
+      }
+    }
+  }
+}
+.section-4{
+  @extend .grid-container;
+  &_left{
+    @extend .grid-mobile_col-12;
+    @extend .grid-tablet_col-6;
+    @extend .grid-desktop_col-5;
+    padding-top: $general-spacing;
+    h3{
+      color: $text-secondary;
+    }
+  }
+  &_right{
+    @extend .grid-mobile_col-12;
+    @extend .grid-tablet_col-6;
+    @extend .grid-desktop_col-7;
+    background: url('../img/section04-image.jpg');
+    background-size: cover;
+    min-height: 320px;
+  }
+}
+.section-5{
+  @extend .grid-container;
+  img{
+    width: 100%;
+  }
+}
+.section-6{
+  background: url('../img/section06-image.jpg');
+  background-size: cover;
+  min-height: 320px;
 }

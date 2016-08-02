@@ -31,13 +31,16 @@ header{
     }
   }
   &_img{
-    background-image: url('../img/header-enterprise.jpg');
-    background-size: cover;
+    background-image: url('../img/overlay_pattern.png'), url('../img/header-enterprise.jpg');
+    background-size: auto, cover;
   }
   &_intro{
-    padding: $grid-gutter-width / 2;
-    h2{
-      color: $text-secondary;
+    @extend .grid-container;
+    &-body{
+      padding: $grid-gutter-width / 2;
+      h2{
+        color: $text-secondary;
+      }
     }
   }
 }
