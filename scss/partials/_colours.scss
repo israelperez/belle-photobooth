@@ -67,7 +67,7 @@ $text-colour-on-dark:   white;
 // Style anchor elements.
 $link-colour:           $brand-primary !default; // used in reboot
 $link-decoration:       underline !default; // used in reboot
-$link-hover-colour:     white; //darken($link-colour, 15%) !default; // used in reboot
+$link-hover-colour:     inherit; //darken($link-colour, 15%) !default; // used in reboot
 $link-hover-decoration: underline !default; // used in reboot
 
 // Nav
