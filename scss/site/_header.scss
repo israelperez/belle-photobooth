@@ -1,9 +1,6 @@
-header{
-  //background-image: url(../img/header-enterprise.jpg);
-  //background-size: cover;
-}
 .hero{
   padding: 0;
+  position: relative;
   &_nav{
     @extend .grid-container;
     position: relative;
@@ -13,33 +10,111 @@ header{
         height: 32px;
       }
     }
+    &-mob-menu{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 2px;
+      width: 32px;
+      border: none;
+      background-color: $grey-lighter;
+    }
     &-list{
+      display: none;
       position: absolute;
       top: 100%;
       left: 0;
       width: 100%;
+      background: $grey-lighter;
       &__left,
       &__right{
         margin-bottom: 0;
-      }
-      &__left{
-
-      }
-      &__right{
-
+        li{
+          a{
+            display: block;
+            padding: 10px;
+          }
+          &:hover{
+            background: $grey-lightest;
+          }
+        }
       }
     }
   }
   &_img{
     background-image: url('../img/overlay_pattern.png'), url('../img/header-enterprise.jpg');
     background-size: auto, cover;
+    min-height: 189px;
   }
   &_intro{
     @extend .grid-container;
     &-body{
+      @extend .grid-tablet_col-6;
+      @extend .grid-desktop_col-5;
       padding: $grid-gutter-width / 2;
       h2{
         color: $text-secondary;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(tablet) {
+  .hero{
+    &_nav{
+      padding: 0;
+      &-head{
+        background: url('../img/header.png') no-repeat center top;
+        background-size: 220px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 220px;
+        height: 90px;
+        text-align: center;
+        padding-top: $general-spacing / 2;
+      }
+      &-mob-menu{
+        display: none;
+      }
+      &-list{
+        position: static;
+        display: block;
+        &__left,
+        &__right{
+          width: 40%;
+        }
+        &__left{
+          float: left;
+        }
+        &__right{
+          float: right;
+        }
+        li{
+          a{
+            width: 33%;
+            float: left;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .hero_intro{
+    color: $text-on-dark;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    &-body{
+      position: absolute;
+      bottom: $general-spacing * 2;
+      left: 0;
+      padding: 0;
+      h1{
+        color: inherit;
       }
     }
   }
